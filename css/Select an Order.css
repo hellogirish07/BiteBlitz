@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+    --primary-color: #cfdfdc;
+    --secondry-color: #ff5823;
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.h-primary {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.8rem;
+    color: var(--secondry-color);
+    text-align: center;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    padding: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondry-color);
+}
+
+.box {
+    border: 3px solid var(--secondry-color);
+    padding: 30px;
+    margin: 20px 20px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.category-box {
+    border: 3px solid var(--secondry-color);
+    padding: 30px;
+    margin: 10px 5px;
+    border-radius: 28px;
+    background: #f2f2f288;
+    /* opacity: 0.5; */
+    margin-bottom: 20px;
+    /* transition: all 0.5s ease-in-out; */
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.food-category img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+.food-category {
+    transition: all 0.2s ease-in-out;
+}
+
+/* .food-category:hover {
+    transform: scale(1.1)
+} */
+
+.food-details h3 {
+    color: var(--secondry-color);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-div {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-div a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: var(--secondry-color);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondry-color);
+    border:  2px solid var(--secondry-color) ;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .h-primary {
+      font-size: 2.8rem;
+    }
+    
+    .category-box {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .food-category img {
+        height: 100px;
+    } 
+
+    .box {
+        margin: 15px;
+        padding: 8px;
+    }
+
+    .food-details h3 {
+        font-size: 25px;
+    }
+}

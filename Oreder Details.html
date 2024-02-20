@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Oreder Details.css" class="css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/style.css" class="css"> -->
+    <title>Order Details</title>
+</head>
+
+<body>
+    <!-- <h1>Order Details</h1> -->
+    <div id="loading-container">
+        <div id="loading-spinner">
+        </div>
+        <h1 class="loading">Loading ... </h1>
+    </div>
+
+    <div id="content">
+        <section id="content">
+            <h1 class="h-primary center box">Fill Your Order Details :-</h1>
+            <div id="content-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="name" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number: </label>
+                        <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="Oreder">Oreder No.: </label>
+                        <input type="text" name="Oreder" id="Oreder" placeholder="Enter your Oreder No.">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Cold Drinks (If Yes): </label>
+                        <select name="Cold-drink-size" id="CDsize">
+                            <option value="CDsize">200ML</option>
+                            <option value="CDsize">500ML</option>
+                            <option value="CDsize">750ML</option>
+                            <option value="CDsize">1L</option>
+                            <option value="CDsize">2L</option>
+                            <option value="CDsize">None</option>
+                        </select>
+                        <input type="text" name="Cold Drink" id="Cold Drink" placeholder="Enter Cold Drink Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Payment Mathod: </label>
+                        <select name="COD" id="COD">
+                            <option value="COD">Cash On Delivery (COD)</option>
+                            <option value="COD">UPI</option>
+                            <option value="COD">E - Volit </option>
+                            <option value="COD">ATM/Dabit/Cradit Card</option>
+                        </select>
+                        <!-- <input type="text" name="Cold Drink" id="Cold Drink" placeholder="Enter Cold Drink Name"> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="Special Instructions">Special Instructions: </label>
+                        <input type="text" name="Special Instructions" id="Special Instructions"
+                            placeholder="Enter your Special Instructions">
+                    </div>
+                    <div class="form-group">
+                        <label for="Address">Delivery Address: </label>
+                        <textarea name="Address" id="Address" cols="30" rows="5"
+                            placeholder="Enter your Address"></textarea>
+                    </div>
+
+                    <div class="btn-center">
+                        <a href="" id="submitForm" onclick="submitForm()" class="btn">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Script for Loading animation
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.getElementById("loading-container").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 2000);
+        });
+
+        // Script for notification
+        // $("#submitForm").click(function () {
+        // });
+
+        function submitForm() {
+            alert("The Form has been Submitted.");
+            // console.log("Hello")
+        }
+    </script>
+
+
+</body>
+
+</html>
